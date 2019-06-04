@@ -259,6 +259,14 @@ select.form-control {
   }
 }
 
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 0) {
+  input[type=date],
+  input[type=time],
+  input[type=datetime-local],
+  input[type=month] {
+    line-height: 1;
+  }
+}
 /* ==========================================================================
    Alerts
 
@@ -4785,8 +4793,8 @@ h6,
   padding: 0;
   cursor: default;
   pointer-events: none;
-  font-size: 28px;
   border-radius: 100%;
+  font-size: 28px;
 }
 
 .cardhighlight {
@@ -5348,7 +5356,7 @@ h6,
     bottom: 0;
     left: 60px;
     display: block;
-    overflow-y: scroll;
+    overflow-y: auto;
     min-width: 200px;
     padding-top: 10px;
   }
@@ -5394,6 +5402,13 @@ h6,
   .layout-atlas-responsive-topbar .region-topbar .toggle-btn {
     display: inline-block;
   }
+}
+
+.profile-tablet .mx-scrollcontainer:not(.mx-scrollcontainer-open) > .region-sidebar {
+  overflow-y: auto;
+}
+.profile-tablet .mx-scrollcontainer:not(.mx-scrollcontainer-open) > .region-sidebar .mx-scrollcontainer-wrapper {
+  overflow: visible;
 }
 
 /* ==========================================================================

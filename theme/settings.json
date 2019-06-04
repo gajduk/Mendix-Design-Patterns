@@ -1,5 +1,9 @@
-﻿{
-    "pageTemplates": "WebModeler",
+{
+    "pageTemplates" : "WebModeler",
+    "cssFiles": [
+        "styles/css/lib/lib.css",
+        "styles/css/custom/custom.css"
+    ],
     "designProperties": {
         "Widget": [
             {
@@ -212,6 +216,7 @@
                 "description": "Create block-level buttons (buttons that span the full width of a parent).",
                 "class": "btn-block"
             },
+
             {
                 "name": "Bordered",
                 "type": "Toggle",
@@ -573,9 +578,5 @@
                 ]
             }
         ]
-    },
-    "cssFiles": [
-        "styles/css/lib/lib.css",
-        "styles/css/custom/custom.css"
-    ]
+    }
 }
